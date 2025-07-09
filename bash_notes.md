@@ -1,8 +1,12 @@
 # Bash Notes
 From the book: "The Ultimate Linux Shell Scripting Guide" by Donald A. Tevault
 
-## From chapters 1-2
-# A find command that finds all .png files in the /home directory and its subdirectories
+## Chapter 1
+-- Note to self: come back later and add in my notes from chapter one after I sync them
+from my other computer.
+
+## Chapter 2
+A find command that finds all .png files in the /home directory and its subdirectories
 `sudo find /home -name "*.png" -exec cp {} /backup/ \;`
 
 Important to remember that the ; at the end of the command is needed to terminate the `-exec` option.
@@ -14,4 +18,28 @@ command [options] [arguments]
 The options are often preceded by a hyphen (-) or double hyphen (--), and they modify the behavior of the command.
 Sometimes these are called flags or switches.
 
+### History is a powerful tool
+You can use the `history` command to see a list of previously executed commands.
+The ! character can be used to pull commands from history.
+Double exclamation marks (!!) will repeat the last command.
 
+`!?` will be used to search for a command in history.
+`!n` will repeat the nth command in history.
+
+To see what number a command in history is, you can use the `history` command.
+
+### Answers to Chapter 2 Review Questions
+1. If I use the && command, the second command will only run if the first command was successful.
+
+2. If I want to run a command with the $ metacharacter I can either surround the command with single quotes,
+or I can escape the character with a \ like so: `\$`.
+
+3. If I am using the find command to search the current working directory on FreeBSD,
+I must use the `.` character to indicate the directory.
+On Linux it is not necessary to use the `.` character, but it is a good practice to do so.
+
+4. If I want to use the `mkdir` command and create a set of nested directories
+I need to use the `-p` option to create any sub directories that do not already exist.
+
+5. If I want to perform a command on each file that is found by the `find` command without being prompted
+I can use the `-exec` command. Alternatively, if I do want to be prompted I cashould use the `-ok` command instead.
