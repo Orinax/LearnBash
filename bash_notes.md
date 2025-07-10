@@ -43,3 +43,20 @@ I need to use the `-p` option to create any sub directories that do not already 
 
 5. If I want to perform a command on each file that is found by the `find` command without being prompted
 I can use the `-exec` command. Alternatively, if I do want to be prompted I cashould use the `-ok` command instead.
+
+
+## Chapter 3
+This is a short chapter but I was able to open it and read it the day after I finished chapter 2.
+Small progress, but still progress nontheless.
+
+### Answers to Chapter 3 Review Questions
+1. The metacharacter that is used to help view variables is the `$` character.
+
+2. Because environment variables are always in full caps, any programming variables that are
+created shoul be in lower case to avoid confusion.
+
+3. If I am in a shell session and I set a variable and I want to to be available in other shell sessions,
+I will need to use the `export` command to add it to the environment.
+
+4. The `|` metacharacter is used to pip the output of one command and then use it as the input for another command.
+
