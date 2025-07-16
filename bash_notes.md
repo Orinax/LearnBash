@@ -60,3 +60,32 @@ I will need to use the `export` command to add it to the environment.
 
 4. The `|` metacharacter is used to pip the output of one command and then use it as the input for another command.
 
+## Chapter 4
+
+### Answers to Chapter 4 Review Questions
+1. The file descritor number for stdin is 0.
+stdout has the file descriptor number 1.
+stderr has the file descriptor nubmer 2.
+
+2. The following operator is for stdin: <
+
+3. Here is a command: `tr [:lower:] [:upper:] < filelist.txt > filelist.txt`
+The contents of the filelist.txt file will be wiped out, and you'll be left with just an empty file.
+When using `tr`, the output should not be redirected to the same file as the input.
+
+4. The default stdin device is the keyboard.
+
+5. To send stderr and stdout to the same place you can use the following operators:
+2>&1
+
+## Chapter 5
+
+### Answers to Chapter 5 Review Questions
+1. To set the noclobber option, you can use either of these two commands:
+`set -o noclobber` or `set-C`  . The noclobber option prevents the shell from overwriting existing files when redirecting output.
+
+2. On a Fedora machine, this user-level configuration file will also affect login shell sessions:
+`.bash_profile`
+
+3. If a user opens a terminal emulator on their desktop Linux machine, the type of shell session that
+is being used is a non-login shell session. This session is also an interactive shell session.
