@@ -90,4 +90,20 @@ When using `tr`, the output should not be redirected to the same file as the inp
 3. If a user opens a terminal emulator on their desktop Linux machine, the type of shell session that
 is being used is a non-login shell session. This session is also an interactive shell session.
 
-## Update needed... 
+## Chapter 6
+
+### Answers to Chapter 6 Review Questions
+1. It is possible to use the `paste` utility to join two or more files together side-by-side.
+
+2. It is also possible to create simple databases if one uses the `sort` and `join` utilities together.
+
+3. The command `cat file1.txt file2.txt > file3.txt` is the correct way to save the output of the cat operation.
+If a third new file is not used then some of the data from the other files would be lost.
+
+4. The `sort` command is helpful as well. One example command that allows for a sort to happen on Field 1, and only Field 1 of a file is:
+`sort -k1,1 myfile.txt`
+
+5. For the `cat` utility, to eliminate duplicate blank lines the option switch `-s` should be used.
+
+## Update needed...
+Chapter 7 coming up soon...
